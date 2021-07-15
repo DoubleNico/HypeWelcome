@@ -1,0 +1,10 @@
+name: HypeWelcome
+version: ${project.version}
+main: me.doublenico.hypewelcome.HypeWelcome
+softdepend: [ PlaceholderAPI ]
+authors: [ DoubleNico ]
+description: Welcome !
+commands:
+  hypewelcome:
+    description: HypeWelcome plugin
+    usage: /<command> <args>

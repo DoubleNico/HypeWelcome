@@ -1,0 +1,81 @@
+#If you wanna exclude the player that connects to the broadcast
+#!!! Bugs will happen if you have the title/actionbar/bossbar for player enabled
+#!!! because it will send 2 titles, 2 actionbars, 2 bossbar, to the player that connects
+
+# CUSTOM PLACEHOLDERS (if you don't have placeholderAPI
+# {player} - gets player's display name
+# {player_x} - gets player x location
+# {player_y} - gets player y location
+# {player_z} - gets player z location
+# {player_xp} - gets player's total XP (not number of level)
+# {player_health} - gets player's health (exemple: "20")
+# {player_item_mainhand} - gets player's item in main hand (exemple: "DIAMOND_SWORD")
+# {player_world} - gets player's world (exemple: "world")
+# {player_gamemode} - gets player's gamemode (exemple: "CREATIVE")
+# {player_uuid} - gets player's UUID
+# I will add more placeholders, but these are the classic placeholders!!
+# You can always give me some ideas !!
+
+exclude: true
+custom_join_file: true #If you want to have the custom join file ##SEE join_custom.yml ##
+#
+#
+#             JOIN
+#
+#
+JOIN_TITLE: true # Enables the title for player when he connects
+JOIN_BROADCAST_TITLE: true # Enables the broadcast title when the player connects
+
+JOIN_MESSAGE: true # Sends a message !
+JOIN_BROADCAST_MESSAGE: true # Sends a broadcast message
+
+JOIN_ACTIONBAR: true # Sends an actionbar
+JOIN_BROADCAST_ACTIONBAR: true # Sends a broadcast actionbar
+
+JOIN_BOSSBAR: true # Sends a bossbar
+JOIN_BROADCAST_BOSSBAR: true # Sends a broadcast bossbar
+
+JOIN_SOUND: true # Plays a sound when player connects
+JOIN_SOUND_BROADCAST: true # Plays a broadcast sound
+#
+#
+#             FIRST JOIN
+#
+#
+FIRST_JOIN_TITLE: true
+FIRST_JOIN_BROADCAST_TITLE: true
+
+FIRST_JOIN_MESSAGE: true
+FIRST_JOIN_BROADCAST_MESSAGE: true
+
+FIRST_JOIN_ACTIONBAR: true
+FIRST_JOIN_BROADCAST_ACTIONBAR: true
+
+FIRST_JOIN_BOSSBAR: true
+FIRST_JOIN_BROADCAST_BOSSBAR: true
+
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+# SUPPORTS LEGACY SOUNDS!!!!
+FIRST_JOIN_SOUND: true
+FIRST_JOIN_SOUND_BROADCAST: true
+#
+#
+#             QUIT
+#
+#
+QUIT_TITLE: true
+QUIT_BROADCAST_TITLE: true
+
+QUIT_MESSAGE: true
+QUIT_BROADCAST_MESSAGE: true
+
+QUIT_ACTIONBAR: true
+QUIT_BROADCAST_ACTIONBAR: true
+
+QUIT_BOSSBAR: true
+QUIT_BROADCAST_BOSSBAR: true
+
+QUIT_SOUND: true
+QUIT_SOUND_BROADCAST: true
+COMMANDS:
+  WELCOME: "&bHello %player_name% welcome !! &7(%sender)"

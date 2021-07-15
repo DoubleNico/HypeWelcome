@@ -1,0 +1,28 @@
+
+QUIT_BROADCAST_TITLE:
+  TITLE: "&b%player_name% left the server"
+  SUBTITLE: "&fGoodbye!"
+  FADEIN: 20 # 20 ticks = 1 second
+  STAY: 60 # 20 ticks = 1 second
+  FADEOUT: 20 # 20 ticks = 1 second
+
+QUIT_BROADCAST_ACTIONBAR: "&b%player_name% left the server."
+
+QUIT_BROADCAST_BOSSBAR:
+  MESSAGE: "&bThis is an animated bossbar!!!"
+  COLOR: "RED" # BLUE GREEN PINK PURPLE RED WHITE YELLOW, for 1.9 you can use only PURPLE
+  TIME: 5 # Seconds
+
+QUIT_SOUND_BROADCAST:
+  SOUND: ENTITY_PLAYER_LEVELUP
+  VOLUME: 10
+  PITCH: 1
+
+QUIT_BROADCAST_MESSAGE:
+  - '&b&l------------------------------'
+  - '&b'
+  - '%center% &b%player_name% <$#FB0B0B>left to the server<$#E65CFD>'
+  - '%center% &bTHIS MESSAGE IS SEND TO ALL PLAYERS!!!'
+  - '&b'
+  - '{"text":"Hello this is a JSON text!","bold":true,"underlined":true,"color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"},"hoverEvent":{"action":"show_text","contents":[{"text":"Hello the hover is so cool loool","bold":true,"italic":true,"color":"dark_red"}]}}'
+

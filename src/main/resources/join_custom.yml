@@ -1,0 +1,45 @@
+# Custom commands:
+#  / 1 command / 2 description / 3 usage
+# [console] /  Sends a command from console / [console] <command without slash>
+# [player] / Sends a command for the executor / [player] <command without slash>
+# [message] / Sends a message to the chat / [message] text
+# [chat] / Sends a message to the chat as the player / [chat] text
+# [broadcast] / Sends a message to all players / [broadcast] text
+# [json] / Sends a json message to the chat / [json] {"text"}......
+# [json_broadcast] / Sends a json message to all players / [json_broadcast] {"text"}......
+# [sound] / Play a sound for the executor / [sound] SOUND_NAME volume(number) pitch(number)
+# [sound_broadcast] / Play a sound for every player / [sound_broadcast] SOUND_NAME volume(number) pitch(number)
+# [actionbar] / Sends and actionbar to the executor / [actionbar] text
+# [actionbar_broadcast] / Sends an actionbar to all players / [actionbar_broadcast] text
+# [title] / Sends a title to the executor / [title] title subtitle fadein stay fadeout
+# [title_broadcast] / Sends a title to all players / [title_broadcast] title subtitle fadein stay fadeout
+# [bossbar] / Sends a bossbar to the executor / [bossbar] text color time
+# [bossbar_broadcast] / Sends a bossbar to all players / [bossbar_broadcast] text color time
+# For [title], [title_broadcast], [bossbar] and [bossbar_broadcast] the symbol "_" is like a space
+# For exemple "Hello_World" -> "Hello World"
+# Bar Color: BLUE GREEN PINK PURPLE RED WHITE YELLOW, for 1.9 you can use only PURPLE
+
+JOINS:
+  default:
+    permission: "hypewelcome.default"
+    disableop: false
+    commands:
+      - '[message] <$#FB0B0B>&lDebug GRADINET<$#E65CFD>'
+      - '[message] '
+      - '[message] %center% <$#084CFB>&l-----------<$#ADF3FD>'
+      - '[message] %center% <#FB0B0B>%player_name% <$#FB0B0B> joined to the server<$#E65CFD>'
+      - '[message] %center% <$#084CFB>&l-----------<$#ADF3FD>'
+      - '[message] '
+      - '[console] gmc %player_name%'
+      - '[player] i diamond_ore'
+      - '[json] {"text":"Hello this is a JSON text!","bold":true,"underlined":true,"color":"dark_purple","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"},"hoverEvent":{"action":"show_text","contents":[{"text":"Hello the hover is so cool loool","bold":true,"italic":true,"color":"dark_red"}]}}'
+      - '[title] <#FB0000>Hello_%player_name% <$#FB0B0B>This_Is_A_RGB_Subtitle<$#E65CFD> 20 60 20'
+      - '[bossbar] <$#FB0000>Animated_BossBar<$#E9FD6E> RED 10'
+      - '[actionbar] <$#FB0000>This Actionbar is so coooool<$#E9FD6E>'
+      - '[sound] ENTITY_PLAYER_LEVELUP 1 10'
+      - '[sound_broadcast] ENTITY_PLAYER_LEVELUP 5 10'
+      - '[broadcast] '
+      - '[broadcast] %center% &b&l-----------'
+      - '[broadcast] %center% <$#FB0B0B>%player_name% joined to the server<$#E65CFD>'
+      - '[broadcast] %center% &b&l-----------'
+      - '[broadcast] '
